@@ -1,0 +1,45 @@
+<html>
+  <head><title>can-ajax demo</title></head>
+  <body>
+  <h1>can-ajax Demonstration</h1>
+  <p>This demonstrates the usage of can-ajax. Below you'll see a few fields from the project's <code>bower.json</code> file.</p>
+  <div id="app"></div>
+  <script id="tmpl" type="text/mustache">
+    <can-ajax url="/bower.json">
+      {{#data}}
+        <h2>Component</h2>
+        <p>{{name}}</p>
+
+        <h2>Main file</h2>
+        <p>{{main}}</p>
+
+        <h2>Authors</h2>
+        <ul>
+          {{#each authors}}
+          <li>{{.}}</li>
+          {{/each}}
+        </ul>
+
+        <h2>Description</h2>
+        <p>{{description}}</p>
+
+        <h2>Dependencies</h2>
+        <ul>
+          {{#each dependencies}}
+          <li>
+            <span><strong>{{@key}}</strong>: {{.}}<span>
+          </li>
+          {{/each}}
+        </ul>
+      {{/data}}
+    </can-ajax>
+  </script>
+  <script src="steal/steal.js"></script>
+  <script>
+    steal('can', 'can-ajax.js', function(can) {
+      var $ = can.$;
+      $('#app').html(can.view('tmpl', {}));
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+[submodule "documentjs"]
+	path = documentjs
+	url = git@github.com:bitovi/documentjs.git
+[submodule "can"]
+	path = can
+	url = git@github.com:bitovi/canjs.git

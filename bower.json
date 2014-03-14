@@ -1,0 +1,30 @@
+{
+  "name": "can-ajax",
+  "main": "can-ajax.js",
+  "version": "0.0.0",
+  "authors": [
+    "Matthew Phillips <matthew@matthewphillips.info>"
+  ],
+  "description": "Ajax component",
+  "keywords": [
+    "webcomponents",
+    "components",
+    "can",
+    "canjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "canjs": "~2.0.5"
+  },
+  "devDependencies": {
+    "funcunit": "~2.0.4",
+    "jquery": "~2.1.0"
+  }
+}
