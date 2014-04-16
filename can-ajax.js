@@ -52,19 +52,28 @@
        * @property data
        * The data returned by the xhr request
        */
-      data: null
+      data: null,
+
+      /**
+       * @property loading
+       */
+      loading: false
     },
     events: {
       init: function(el) {
         var scope = this.scope;
         var query = this.query();
 
+        scope.attr('loading', true);
         ajax({
           url: el.attr('url'),
           type: el.attr('method') || 'GET',
           data: query
         }).then(function(data) {
-          scope.attr('data', data);
+          scope.attr({
+            data: data,
+            loading: false
+          });
         });
       },
       query: function() {

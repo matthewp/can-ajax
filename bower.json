@@ -1,7 +1,7 @@
 {
   "name": "can-ajax",
   "main": "can-ajax.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "Matthew Phillips <matthew@matthewphillips.info>"
   ],
