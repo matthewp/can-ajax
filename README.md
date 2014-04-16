@@ -1,4 +1,4 @@
-# <can-ajax>
+# &lt;can-ajax&gt;
 
 `<can-ajax>` is a [can.Component](http://canjs.com/docs/can.Component.html) for performing XHR requests. You might be thinking that XHR is not something that belongs in markup, and you may be right, but `<can-ajax>` is an experiment in using the power of can.Component's scoping to allow a greater degree of dynamism within your templates. For example, with `<can-ajax>` it is trivial to decouple components from the data they use *and* conditionally display loading indicators:
 

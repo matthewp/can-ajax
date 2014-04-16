@@ -10,7 +10,9 @@
     "webcomponents",
     "components",
     "can",
-    "canjs"
+    "canjs",
+    "can-component",
+    "can.component"
   ],
   "license": "MIT",
   "ignore": [
